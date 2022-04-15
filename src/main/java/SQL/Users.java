@@ -17,6 +17,10 @@ public class Users extends SQL{
     public void reg(String name, String login, String password){
         insert(String.format("update users set login = \"%s\", pas = \"%s\" where name = \"%s\"", login, password, name));
     }
+
+    public void CreateTable(){
+        insert("CREATE TABLE users(id int auto_increment primary key, name varchar(30) unique, login varchar(30), password varchar(30));");
+    }
 }
 
 

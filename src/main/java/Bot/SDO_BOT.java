@@ -54,6 +54,7 @@ public class SDO_BOT extends TelegramLongPollingBot {
                     case "/reg" -> UpdateUserData(message, answer);
                     case "/display" -> DisplayAll(name, answer);
                     case "/timetable" -> TimeTable(name, answer);
+                    case "/CreateTable" -> users.CreateTable();
                 }
             }
 
