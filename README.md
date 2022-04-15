@@ -14,4 +14,6 @@
         } catch (TelegramApiException | IOException e) {
             e.printStackTrace();
         }
-```    
+```
+
+В файле config указываются все параметы бота и базы данных
